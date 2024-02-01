@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('personal_access_tokens', function (Blueprint $table) {
-            $table->string('expires_at');
+            $table->string('expires_at')->nullable();
         });
     }
 
