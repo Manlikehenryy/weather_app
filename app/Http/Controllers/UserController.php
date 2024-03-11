@@ -56,7 +56,7 @@ class UserController extends Controller
           "password" => $request->Password,
       ], [
           'email' => 'required|string|email|max:255',
-          'password' => 'required|string|min:5',
+          'password' => 'required|string',
       ]);
 
         //if validation fails
