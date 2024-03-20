@@ -42,7 +42,7 @@ click on the admin button beside MySQL
 
 ### Create database
 
-create a new database, name it "ats_app"
+create a new database, name it "weather_app"
 
 ### create environment file
 ```
@@ -52,6 +52,15 @@ cp .env.example .env
 ```
 php artisan key:generate
 ```
+### Set up .env
+```
+DB_CONNECTION=pgsql
+DB_HOST=...
+DB_PORT=5432
+DB_DATABASE=weather_app
+DB_USERNAME=...
+DB_PASSWORD=...
+```
 ### Migration
 ```
 php artisan migrate
@@ -60,3 +69,6 @@ php artisan migrate
 ```
 php artisan serve
 ```
+
+
+
